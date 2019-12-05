@@ -39,7 +39,7 @@ async function createUser (argv) {
   // Cannot create already-existing users
   if (existingUser !== undefined) {
     console.log(`User with e-mail ${existingUser.email} already exists! Aborting ...`)
-    process.exit(1)
+    process.exit(2)
   }
 
   const pass = getPass(argv, 'add')
